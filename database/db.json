@@ -1,0 +1,392 @@
+{
+  "users": [
+    {
+      "id": "USR-900001",
+      "username": "admin",
+      "password": "$2a$10$otJPCNwRVTe2Gp3MY9f1D.l/A00Oh6NjtFk77oT9xnsF5SU.2EnM.",
+      "role": "admin",
+      "name": "Principal Management"
+    },
+    {
+      "id": "USR-900002",
+      "username": "teacher1",
+      "password": "$2a$10$otJPCNwRVTe2Gp3MY9f1D.l/A00Oh6NjtFk77oT9xnsF5SU.2EnM.",
+      "role": "teacher",
+      "name": "Sarah Connor"
+    },
+    {
+      "id": "USR-900003",
+      "username": "teacher2",
+      "password": "$2a$10$otJPCNwRVTe2Gp3MY9f1D.l/A00Oh6NjtFk77oT9xnsF5SU.2EnM.",
+      "role": "teacher",
+      "name": "John Doe"
+    },
+    {
+      "id": "USR-900004",
+      "username": "parent1",
+      "password": "$2a$10$otJPCNwRVTe2Gp3MY9f1D.l/A00Oh6NjtFk77oT9xnsF5SU.2EnM.",
+      "role": "parent",
+      "name": "Robert Baratheon"
+    },
+    {
+      "id": "USR-900005",
+      "username": "parent2",
+      "password": "$2a$10$otJPCNwRVTe2Gp3MY9f1D.l/A00Oh6NjtFk77oT9xnsF5SU.2EnM.",
+      "role": "parent",
+      "name": "Catelyn Stark"
+    },
+    {
+      "id": "USR-900006",
+      "username": "driver1",
+      "password": "$2a$10$otJPCNwRVTe2Gp3MY9f1D.l/A00Oh6NjtFk77oT9xnsF5SU.2EnM.",
+      "role": "driver",
+      "name": "Arthur Dent"
+    },
+    {
+      "id": "USR-900007",
+      "username": "driver2",
+      "password": "$2a$10$otJPCNwRVTe2Gp3MY9f1D.l/A00Oh6NjtFk77oT9xnsF5SU.2EnM.",
+      "role": "driver",
+      "name": "Ford Prefect"
+    }
+  ],
+  "students": [
+    {
+      "id": "STD-100001",
+      "studentId": "STD-100001",
+      "admissionNumber": "ADM2026001",
+      "name": "Joffrey Baratheon",
+      "class": "Class 10",
+      "division": "A",
+      "parentName": "Robert Baratheon",
+      "parentId": "PRN-100001",
+      "phoneNumber": "9876543210",
+      "address": "Red Keep Chambers, King's Landing",
+      "busId": "BUS-100001",
+      "pickupPoint": "King's Landing Square",
+      "monthlyFee": 2500,
+      "status": "Active"
+    },
+    {
+      "id": "STD-100002",
+      "studentId": "STD-100002",
+      "admissionNumber": "ADM2026002",
+      "name": "Myrcella Baratheon",
+      "class": "Class 10",
+      "division": "A",
+      "parentName": "Robert Baratheon",
+      "parentId": "PRN-100001",
+      "phoneNumber": "9876543210",
+      "address": "Water Gardens, Sunspear",
+      "busId": "BUS-100001",
+      "pickupPoint": "King's Landing Square",
+      "monthlyFee": 2500,
+      "status": "Active"
+    },
+    {
+      "id": "STD-100003",
+      "studentId": "STD-100003",
+      "admissionNumber": "ADM2026003",
+      "name": "Robb Stark",
+      "class": "Class 9",
+      "division": "B",
+      "parentName": "Catelyn Stark",
+      "parentId": "PRN-100002",
+      "phoneNumber": "8765432109",
+      "address": "Great Keep, Winterfell",
+      "busId": "BUS-100002",
+      "pickupPoint": "Winterfell Gate",
+      "monthlyFee": 3000,
+      "status": "Active"
+    }
+  ],
+  "parents": [
+    {
+      "id": "PRN-100001",
+      "userId": "USR-900004",
+      "username": "parent1",
+      "name": "Robert Baratheon",
+      "phone": "9876543210",
+      "email": "robert@example.com"
+    },
+    {
+      "id": "PRN-100002",
+      "userId": "USR-900005",
+      "username": "parent2",
+      "name": "Catelyn Stark",
+      "phone": "8765432109",
+      "email": "catelyn@example.com"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "TCH-100001",
+      "userId": "USR-900002",
+      "name": "Sarah Connor",
+      "username": "teacher1",
+      "class": "Class 10",
+      "division": "A"
+    },
+    {
+      "id": "TCH-100002",
+      "userId": "USR-900003",
+      "name": "John Doe",
+      "username": "teacher2",
+      "class": "Class 9",
+      "division": "B"
+    }
+  ],
+  "drivers": [
+    {
+      "id": "DRV-100001",
+      "userId": "USR-900006",
+      "name": "Arthur Dent",
+      "salary": 25000,
+      "busAssigned": "BUS-100001"
+    },
+    {
+      "id": "DRV-100002",
+      "userId": "USR-900007",
+      "name": "Ford Prefect",
+      "salary": 27000,
+      "busAssigned": "BUS-100002"
+    }
+  ],
+  "payments": [
+    {
+      "id": "PAY-100001",
+      "studentId": "STD-100001",
+      "amount": 2500,
+      "month": "January",
+      "date": "2026-01-05",
+      "paymentMode": "Cash",
+      "collectedBy": "Sarah Connor",
+      "receiptNumber": "REC-20260105-01",
+      "timestamp": "2026-01-05T10:00:00.000Z"
+    },
+    {
+      "id": "PAY-100002",
+      "studentId": "STD-100002",
+      "amount": 2500,
+      "month": "January",
+      "date": "2026-01-05",
+      "paymentMode": "Cash",
+      "collectedBy": "Sarah Connor",
+      "receiptNumber": "REC-20260105-02",
+      "timestamp": "2026-01-05T10:15:00.000Z"
+    },
+    {
+      "id": "PAY-100003",
+      "studentId": "STD-100003",
+      "amount": 3000,
+      "month": "January",
+      "date": "2026-01-04",
+      "paymentMode": "Online",
+      "collectedBy": "John Doe",
+      "receiptNumber": "REC-20260104-03",
+      "timestamp": "2026-01-04T14:30:00.000Z"
+    },
+    {
+      "id": "PAY-100004",
+      "studentId": "STD-100001",
+      "amount": 2500,
+      "month": "February",
+      "date": "2026-02-08",
+      "paymentMode": "Cash",
+      "collectedBy": "Sarah Connor",
+      "receiptNumber": "REC-20260208-01",
+      "timestamp": "2026-02-08T09:30:00.000Z"
+    },
+    {
+      "id": "PAY-100005",
+      "studentId": "STD-100002",
+      "amount": 2500,
+      "month": "February",
+      "date": "2026-02-12",
+      "paymentMode": "Online",
+      "collectedBy": "Sarah Connor",
+      "receiptNumber": "REC-20260212-02",
+      "timestamp": "2026-02-12T11:00:00.000Z"
+    },
+    {
+      "id": "PAY-100006",
+      "studentId": "STD-100003",
+      "amount": 3000,
+      "month": "February",
+      "date": "2026-02-05",
+      "paymentMode": "Online",
+      "collectedBy": "John Doe",
+      "receiptNumber": "REC-20260205-03",
+      "timestamp": "2026-02-05T12:00:00.000Z"
+    },
+    {
+      "id": "PAY-100007",
+      "studentId": "STD-100001",
+      "amount": 2500,
+      "month": "March",
+      "date": "2026-03-15",
+      "paymentMode": "Cash",
+      "collectedBy": "Sarah Connor",
+      "receiptNumber": "REC-20260315-01",
+      "timestamp": "2026-03-15T09:00:00.000Z"
+    },
+    {
+      "id": "PAY-100008",
+      "studentId": "STD-100002",
+      "amount": 2500,
+      "month": "March",
+      "date": "2026-03-24",
+      "paymentMode": "Cash",
+      "collectedBy": "Sarah Connor",
+      "receiptNumber": "REC-20260324-02",
+      "timestamp": "2026-03-24T10:00:00.000Z"
+    },
+    {
+      "id": "PAY-100009",
+      "studentId": "STD-100003",
+      "amount": 3000,
+      "month": "March",
+      "date": "2026-03-03",
+      "paymentMode": "Online",
+      "collectedBy": "John Doe",
+      "receiptNumber": "REC-20260303-03",
+      "timestamp": "2026-03-03T16:00:00.000Z"
+    },
+    {
+      "id": "PAY-100010",
+      "studentId": "STD-100001",
+      "amount": 2500,
+      "month": "April",
+      "date": "2026-04-20",
+      "paymentMode": "Cash",
+      "collectedBy": "Sarah Connor",
+      "receiptNumber": "REC-20260420-01",
+      "timestamp": "2026-04-20T10:00:00.000Z"
+    },
+    {
+      "id": "PAY-100011",
+      "studentId": "STD-100003",
+      "amount": 3000,
+      "month": "April",
+      "date": "2026-04-05",
+      "paymentMode": "Online",
+      "collectedBy": "John Doe",
+      "receiptNumber": "REC-20260405-03",
+      "timestamp": "2026-04-05T13:00:00.000Z"
+    },
+    {
+      "id": "PAY-100012",
+      "studentId": "STD-100003",
+      "amount": 3000,
+      "month": "May",
+      "date": "2026-05-02",
+      "paymentMode": "Online",
+      "collectedBy": "John Doe",
+      "receiptNumber": "REC-20260502-03",
+      "timestamp": "2026-05-02T15:00:00.000Z"
+    }
+  ],
+  "salaries": [
+    {
+      "id": "SAL-100001",
+      "driverId": "DRV-100001",
+      "name": "Arthur Dent",
+      "amount": 25000,
+      "bonus": 1000,
+      "deduction": 500,
+      "finalSalary": 25500,
+      "paymentDate": "2026-05-30",
+      "status": "Paid"
+    },
+    {
+      "id": "SAL-100002",
+      "driverId": "DRV-100002",
+      "name": "Ford Prefect",
+      "amount": 27000,
+      "bonus": 2000,
+      "deduction": 0,
+      "finalSalary": 29000,
+      "paymentDate": "2026-05-30",
+      "status": "Paid"
+    },
+    {
+      "id": "SAL-100003",
+      "driverId": "DRV-100001",
+      "name": "Arthur Dent",
+      "amount": 25000,
+      "bonus": 0,
+      "deduction": 0,
+      "finalSalary": 25000,
+      "paymentDate": "2026-06-28",
+      "status": "Paid"
+    },
+    {
+      "id": "SAL-100004",
+      "driverId": "DRV-100002",
+      "name": "Ford Prefect",
+      "amount": 27000,
+      "bonus": 500,
+      "deduction": 1000,
+      "finalSalary": 26500,
+      "paymentDate": "2026-06-28",
+      "status": "Paid"
+    }
+  ],
+  "buses": [
+    {
+      "id": "BUS-100001",
+      "busNumber": "KA-01-FE-1234",
+      "driverId": "DRV-100001",
+      "route": "Route A - Downtown to School",
+      "capacity": 40
+    },
+    {
+      "id": "BUS-100002",
+      "busNumber": "KA-01-FE-5678",
+      "driverId": "DRV-100002",
+      "route": "Route B - Uptown to School",
+      "capacity": 35
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "AUD-100001",
+      "userId": "USR-900001",
+      "userRole": "admin",
+      "action": "SEED",
+      "targetTable": "all",
+      "description": "Initial Database Seed Completed Successfully",
+      "timestamp": "2026-07-14T17:07:37.273Z"
+    },
+    {
+      "id": "AUD-923832",
+      "userId": "USR-900001",
+      "userRole": "admin",
+      "action": "BACKUP",
+      "targetTable": "all",
+      "description": "Manual database backup generated: db_backup_2026-07-14T17-19-03-102Z.json",
+      "details": null,
+      "timestamp": "2026-07-14T17:19:03.109Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "NTF-100001",
+      "recipientRole": "parent",
+      "recipientId": "PRN-100001",
+      "title": "Bus Fee Unpaid",
+      "message": "May and June fee is overdue for Joffrey Baratheon.",
+      "status": "unread",
+      "createdAt": "2026-07-14T17:07:37.279Z"
+    },
+    {
+      "id": "NTF-100002",
+      "recipientRole": "driver",
+      "recipientId": "DRV-100001",
+      "title": "Salary Credited",
+      "message": "Arthur Dent, your salary for June has been credited.",
+      "status": "read",
+      "createdAt": "2026-07-14T17:07:37.279Z"
+    }
+  ]
+}
